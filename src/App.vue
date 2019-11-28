@@ -9,7 +9,7 @@
           <ul id="list" v-lazyloadimage="{time: 300}">
             <li v-for="item in prd" v-bind:key="item.idx">
               <div class="img_wrap">
-                <img :data-src="item.imgUrl" class="lazy">
+                <img :data-src="item.imgUrl" class="lazy" />
                 <!-- <div :data-bg="item.imgUrl" class="lazy img"></div> -->
               </div>
             </li>
@@ -22,54 +22,64 @@
 
 <script>
 export default {
-  name: "app",
-  data() {
+  name: 'app',
+  data () {
     return {
       prd: [
         {
-		      idx: 1,
-          imgUrl: "https://vueschool.io/media/e5d78fffdb3ae73bda04e07f18551016/the-vuejs-3-master-class.jpeg"
+          idx: 1,
+          imgUrl:
+            'https://vueschool.io/media/e5d78fffdb3ae73bda04e07f18551016/the-vuejs-3-master-class.jpeg'
         },
         {
-		      idx: 2,
-          imgUrl: "https://vueschool.io/media/276ae535019f8df829dae9d295bd2db9/web-accessibility-fundamentals.png"
-		    },
-		    {
-		      idx: 3,
-          imgUrl: "https://vueschool.io/media/e5d78fffdb3ae73bda04e07f18551016/the-vuejs-3-master-class.jpeg"
+          idx: 2,
+          imgUrl:
+            'https://vueschool.io/media/276ae535019f8df829dae9d295bd2db9/web-accessibility-fundamentals.png'
         },
         {
-		      idx: 4,
-          imgUrl: "https://vueschool.io/media/276ae535019f8df829dae9d295bd2db9/web-accessibility-fundamentals.png"
-		    },
-		    {
-		      idx: 5,
-          imgUrl: "https://vueschool.io/media/e5d78fffdb3ae73bda04e07f18551016/the-vuejs-3-master-class.jpeg"
+          idx: 3,
+          imgUrl:
+            'https://vueschool.io/media/e5d78fffdb3ae73bda04e07f18551016/the-vuejs-3-master-class.jpeg'
         },
         {
-		      idx: 6,
-          imgUrl: "https://vueschool.io/media/276ae535019f8df829dae9d295bd2db9/web-accessibility-fundamentals.png"
-		    },
-		    {
-		      idx: 7,
-          imgUrl: "https://vueschool.io/media/e5d78fffdb3ae73bda04e07f18551016/the-vuejs-3-master-class.jpeg"
+          idx: 4,
+          imgUrl:
+            'https://vueschool.io/media/276ae535019f8df829dae9d295bd2db9/web-accessibility-fundamentals.png'
         },
         {
-		      idx: 8,
-          imgUrl: "https://vueschool.io/media/276ae535019f8df829dae9d295bd2db9/web-accessibility-fundamentals.png"
-		    },
-		    {
-		      idx: 9,
-          imgUrl: "https://vueschool.io/media/e5d78fffdb3ae73bda04e07f18551016/the-vuejs-3-master-class.jpeg"
+          idx: 5,
+          imgUrl:
+            'https://vueschool.io/media/e5d78fffdb3ae73bda04e07f18551016/the-vuejs-3-master-class.jpeg'
         },
         {
-		      idx: 10,
-          imgUrl: "https://vueschool.io/media/276ae535019f8df829dae9d295bd2db9/web-accessibility-fundamentals.png"
+          idx: 6,
+          imgUrl:
+            'https://vueschool.io/media/276ae535019f8df829dae9d295bd2db9/web-accessibility-fundamentals.png'
+        },
+        {
+          idx: 7,
+          imgUrl:
+            'https://vueschool.io/media/e5d78fffdb3ae73bda04e07f18551016/the-vuejs-3-master-class.jpeg'
+        },
+        {
+          idx: 8,
+          imgUrl:
+            'https://vueschool.io/media/276ae535019f8df829dae9d295bd2db9/web-accessibility-fundamentals.png'
+        },
+        {
+          idx: 9,
+          imgUrl:
+            'https://vueschool.io/media/e5d78fffdb3ae73bda04e07f18551016/the-vuejs-3-master-class.jpeg'
+        },
+        {
+          idx: 10,
+          imgUrl:
+            'https://vueschool.io/media/276ae535019f8df829dae9d295bd2db9/web-accessibility-fundamentals.png'
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style>
@@ -82,7 +92,9 @@ export default {
 body {
   background: #eee;
 }
-img {width:100%}
+img {
+  width: 100%;
+}
 
 /* 화면 css */
 .list_wrap .img_wrap {
